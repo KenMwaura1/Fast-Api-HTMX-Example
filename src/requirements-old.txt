@@ -8,6 +8,7 @@ databases[postgresql]
 fastapi
 h11
 httptools
+httpx
 idna
 isort
 lazy-object-proxy
