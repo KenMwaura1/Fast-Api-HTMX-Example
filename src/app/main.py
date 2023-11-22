@@ -1,3 +1,4 @@
+from contextlib import asynccontextmanager
 from fastapi import FastAPI
 from starlette.middleware.cors import CORSMiddleware
 
@@ -23,12 +24,22 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-@app.on_event("startup")
+
+# using the asynccontextmanager decorator to create a context manager
+
+@asynccontextmanager
+async def db_transaction():
+    async with database.transaction():
+        yield
+
+
+# using the context manager
+@asynccontextmanager
 async def startup():
     await database.connect()
 
 
-@app.on_event("shutdown")
+@asynccontextmanager
 async def shutdown():
     await database.disconnect()
 
