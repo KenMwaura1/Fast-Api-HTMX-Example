@@ -16,10 +16,13 @@ mccabe
 more-itertools
 packaging
 pluggy
+psycopg2-binary
 py
 pydantic
 pylint
-pyparsing 
+pyparsing
+python-dotenv
+pytz=
 six
 SQLAlchemy
 starlette
