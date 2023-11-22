@@ -141,3 +141,4 @@ def test_remove_note_incorrect_id(test_app, monkeypatch):
 
     response = test_app.delete("/notes/0/")
     assert response.status_code == 422
+
