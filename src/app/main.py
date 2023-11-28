@@ -25,21 +25,13 @@ app.add_middleware(
 )
 
 
-# using the asynccontextmanager decorator to create a context manager
-
-@asynccontextmanager
-async def db_transaction():
-    async with database.transaction():
-        yield
-
-
 # using the context manager
-@asynccontextmanager
+@app.on_event("startup")
 async def startup():
     await database.connect()
 
 
-@asynccontextmanager
+@app.on_event("shutdown")
 async def shutdown():
     await database.disconnect()
 

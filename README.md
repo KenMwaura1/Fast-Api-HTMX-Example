@@ -1,6 +1,6 @@
 # FastAPI Example App
 
-![fastapi-0.92.0-informational](https://img.shields.io/badge/fastapi-0.92.0-informational) [![CodeQL](https://github.com/KenMwaura1/Fast-Api-example/actions/workflows/codeql.yml/badge.svg)](https://github.com/KenMwaura1/Fast-Api-example/actions/workflows/codeql.yml)
+![fastapi-0.104.1-informational](https://img.shields.io/badge/fastapi-0.92.0-informational) [![CodeQL](https://github.com/KenMwaura1/Fast-Api-example/actions/workflows/codeql.yml/badge.svg)](https://github.com/KenMwaura1/Fast-Api-example/actions/workflows/codeql.yml)
 [![Docker Compose Actions Workflow](https://github.com/KenMwaura1/Fast-Api-example/actions/workflows/docker-image.yml/badge.svg)](https://github.com/KenMwaura1/Fast-Api-example/actions/workflows/docker-image.yml)
 
 [!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/kenmwaura1)
@@ -76,39 +76,6 @@ Ensure you have [Node.js](https://nodejs.org/en/) installed. any version above 1
 
 While inside the root folder `Fast-Api-example`
 
-1. Cd into the `vue-client` folder.
-
-   ```shell
-      cd vue-client
-      ```
-
-2. Install the required dependencies.
-   for NPM:
-
-   ```shell
-      npm install
-      ```
-
-   for Yarn:
-
-   ```shell
-      yarn install
-      ```
-
-3. Start the Vue app
-   for NPM:
-
-   ```shell
-      npm run serve
-      ```
-
-   for Yarn:
-
-   ```shell
-      yarn serve
-      ```
-
-4. Open your browser and navigate to [notes](http://localhost:5173)
 
 ## Installation method 2 (Run Locally using Docker)
 
@@ -156,7 +123,7 @@ The docker image is also tagged with the commit sha and pushed to the docker hub
 
 ## Docker Hub
 
-The docker image is available on [Docker Hub](https://hub.docker.com/repository/docker/kenmwaura1/fast-api-example)
+The docker image is available on [Docker Hub](https://hub.docker.com/r/kenmwaura1/fast-api-htmx-example)
 
 ## License
 
