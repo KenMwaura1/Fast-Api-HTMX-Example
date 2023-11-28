@@ -1,6 +1,6 @@
 # FastAPI Example App
 
-![fastapi-0.104.1-informational](https://img.shields.io/badge/fastapi-0.92.0-informational) [![CodeQL](https://github.com/KenMwaura1/Fast-Api-example/actions/workflows/codeql.yml/badge.svg)](https://github.com/KenMwaura1/Fast-Api-example/actions/workflows/codeql.yml)
+![fastapi-0.104.1-informational](https://img.shields.io/badge/fastapi-0.104.1-informational) [![CodeQL](https://github.com/KenMwaura1/Fast-Api-example/actions/workflows/codeql.yml/badge.svg)](https://github.com/KenMwaura1/Fast-Api-example/actions/workflows/codeql.yml)
 [![Docker Compose Actions Workflow](https://github.com/KenMwaura1/Fast-Api-example/actions/workflows/docker-image.yml/badge.svg)](https://github.com/KenMwaura1/Fast-Api-example/actions/workflows/docker-image.yml)
 
 [!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/kenmwaura1)
@@ -10,18 +10,18 @@ This repository contains code for asynchronous example api using the [Fast Api f
 
 ![Fast-api](images/fast-api-scrnsht.png)
 
-## Accompanying Article
+## Accompanying Article 
 
-Read the full tutorial [here](https://dev.to/ken_mwaura1/getting-started-with-fast-api-and-docker-515)
+Read the full tutorial [here]
 
 ## Installation method 1 (Run application locally)
 
 1. Clone this Repo
 
-   `git clone (https://github.com/KenMwaura1/Fast-Api-example)`
-2. Cd into the Fast-Api folder
+   `git clone (https://github.com/KenMwaura1/Fast-Api-HTMX-Example)`
+2. Cd into the Fast-Api-HTMX-Example folder
 
-   `cd Fast-Api-example`
+   `cd Fast-Api-HTMX-Example`
 3. Create a virtual environment
 
    `python3 -m venv venv`
@@ -66,17 +66,9 @@ Read the full tutorial [here](https://dev.to/ken_mwaura1/getting-started-with-fa
 9. Check the app on [notes](http://localhost:8002/notes)
 Open your browser and navigate to [docs](http://localhost:8002/docs) to view the swagger documentation for the api.
 
-## Vue Frontend (Optional)
+## HTMX Frontend 
 
-The is a simple Vue frontend using [vite](https://vitejs.dev/guide/) that was added. However it is an optional step in running the application.
-
-### Installation
-
-Ensure you have [Node.js](https://nodejs.org/en/) installed. any version above 16 should work.
-
-While inside the root folder `Fast-Api-example`
-
-
+-- TODO --
 ## Installation method 2 (Run Locally using Docker)
 
 1. Ensure [Docker](https://docs.docker.com/install/) is installed.
@@ -85,11 +77,11 @@ While inside the root folder `Fast-Api-example`
 
 3. Clone this Repo
 
-   `git clone (https://github.com/KenMwaura1/Fast-Api-example)`
+   `git clone (https://github.com/KenMwaura1/Fast-Api-HTMX-Example)`
 
 4. Change into the directory
 
-   ```cd Fast-Api-example```
+   ```cd Fast-Api-HTMX-Example```
 
 5. Use Docker-Compose to spin up containers
 
@@ -102,7 +94,7 @@ While inside the root folder `Fast-Api-example`
 ## Tests
 
 Tests are available using pytest
-Run them using `pytest .` while in the root directory (/Fast-Api-example)
+Run them using `pytest .` while in the root directory (/Fast-Api-HTMX-Example)
 
 ## Documentation
 
@@ -114,12 +106,12 @@ Contributions are welcome, please open an issue or submit a PR.
 
 ## Github Actions
 
-Github actions are used to run tests and build the docker image. The docker image is pushed to [Docker Hub](https://hub.docker.com/repository/docker/kenmwaura1/fast-api-example). Inorder to effectively use the actions you will need to add the following secrets to your repository settings. `DOCKER_USERNAME` and `DOCKER_PASSWORD` for the docker hub account.
+GitHub actions are used to run tests and build the docker image. The docker image is pushed to [Docker Hub](https://hub.docker.com/repository/docker/kenmwaura1/fast-api-example). Inorder to effectively use the actions you will need to add the following secrets to your repository settings. `DOCKER_USERNAME` and `DOCKER_PASSWORD` for the docker hub account.
 This is to enable the docker login step in the workflow and push the image to the docker hub repository. Alternatively you can remove the step from the workflow by commenting it out.
 
-It is also possible to use [Github Packages](https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-docker-registry) to store the docker image. In this case you will need to add the following secrets to your repository settings. `CR_PAT` and `CR_USERNAME` for the github packages account. In our case the username is the github username. The `CR_PAT` is a personal access token with the `write:packages` scope. This is to enable the docker login step in the workflow and push the image to the github packages repository. Alternatively you can remove the step from the workflow by commenting it out.
+It is also possible to use [GitHub Packages](https://github.com/KenMwaura1/Fast-Api-example(https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-docker-registry) to store the docker image. In this case you will need to add the following secrets to your repository settings. `CR_PAT` and `CR_USERNAME` for the GitHub packages account. In our case the username is the GitHub username. The `CR_PAT` is a personal access token with the `write:packages` scope. This is to enable the docker login step in the workflow and push the image to the github packages repository. Alternatively you can remove the step from the workflow by commenting it out.
 
-The docker image is also tagged with the commit sha and pushed to the docker hub repository. This is to enable the image to be pulled by the docker-compose file in the root directory. The docker-compose file is used to spin up the containers locally. It is available on [Github Packages](https://github.com/KenMwaura1/Fast-Api-example/pkgs/container/fast-api-example) as well.
+The docker image is also tagged with the commit sha and pushed to the docker hub repository. This is to enable the image to be pulled by the docker-compose file in the root directory. The docker-compose file is used to spin up the containers locally. It is available on [GitHub Packages](https://github.com/KenMwaura1/Fast-Api-example/pkgs/container/fast-api-example) as well.
 
 ## Docker Hub
 
